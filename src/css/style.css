@@ -1,0 +1,113 @@
+body {
+    background: url(../images/background-pattern-desktop.svg) no-repeat hsl(275, 100%, 97%);
+    background-size: 1920px;
+
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cartao {
+    min-height: 450px;
+    width: 550px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-attachment: fixed;
+
+}
+
+.cartao .conteudo {
+    padding-inline: 35px;
+    width: 100%;
+
+}
+
+.cartao .conteudo .titulo {
+    font-size: 45px;
+    color: hsl(292, 42%, 14%);
+    font-weight: 700;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: 25px;
+
+}
+
+.cartao .conteudo .titulo::before {
+    content: url(../images/icon-star.svg);
+    margin-right: 15px;
+}
+
+.cartao .conteudo .items .item {
+    background-image: url(../images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-position: top -3px right 0;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+}
+
+
+.cartao .conteudo .items .item .pergunta {
+    font-size: 17px;
+    color: hsl(292, 42%, 14%);
+    font-weight: 600;
+    height: 35px;
+
+}
+
+.cartao .conteudo .items .item .resposta {
+    font-size: 15px;
+    line-height: 23px;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    display: none;
+
+}
+
+
+@media (max-width: 475px) {
+    body {
+        background-image: url(../images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 475px;
+        
+    }
+
+    .cartao {
+        width: 40vh;
+
+    }
+
+    .cartao .conteudo .items .item .pergunta {
+        margin-bottom: 40px;
+        width: 190px;
+    }
+
+    @media (max-width: 330px) {
+        .cartao {
+            width: 45vh;
+        }
+    }
+}
+/* Ativo */
+
+.cartao .conteudo .items .item.ativo {
+    background-image: url(../images/icon-minus.svg);
+
+}
+
+
+
+.cartao .conteudo .items .item.ativo .resposta {
+    margin-bottom: 60px;
+    display: block;
+
+}
