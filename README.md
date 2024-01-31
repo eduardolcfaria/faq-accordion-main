@@ -13,7 +13,7 @@
 
   - <a href= https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz target="_blank">Link do Desafio</a>
 
-  - <a href= target="_blank"> Deployment no Github Pages</a>
+  - <a href= https://eduardolcfaria.github.io/faq-accordion-main/ target="_blank"> Deployment no Github Pages</a>
  
  
 
